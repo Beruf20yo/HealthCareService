@@ -1,28 +1,19 @@
 package ru.netology.patient.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import java.util.Objects;
 
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class BloodPressure {
 
     private int high;
 
     private int low;
-
-    public BloodPressure() {
-    }
-
-    public BloodPressure(int high, int low) {
-        this.high = high;
-        this.low = low;
-    }
-
-    public int getHigh() {
-        return high;
-    }
-
-    public int getLow() {
-        return low;
-    }
 
     @Override
     public String toString() {

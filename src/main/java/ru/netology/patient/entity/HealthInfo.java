@@ -1,22 +1,17 @@
 package ru.netology.patient.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.util.Objects;
-
+@NoArgsConstructor
+@AllArgsConstructor
 public class HealthInfo {
 
     private BigDecimal normalTemperature;
 
     private BloodPressure bloodPressure;
-
-    public HealthInfo() {
-    }
-
-    public HealthInfo(BigDecimal normalTemperature,
-                      BloodPressure bloodPressure) {
-        this.normalTemperature = normalTemperature;
-        this.bloodPressure = bloodPressure;
-    }
 
     public BigDecimal getNormalTemperature() {
         return normalTemperature;
